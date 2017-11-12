@@ -15,6 +15,7 @@
 		60C63DE21FB7ED48005E81FA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63DE11FB7ED48005E81FA /* GradientView.swift */; };
 		60C63DE41FB8207F005E81FA /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63DE31FB8207F005E81FA /* RoundImageView.swift */; };
 		60C63DE61FB8225A005E81FA /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63DE51FB8225A005E81FA /* RoundedShadowView.swift */; };
+		60C63DE81FB8241F005E81FA /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63DE71FB8241F005E81FA /* CircleView.swift */; };
 		95F0C5B4244EC350CB8095B5 /* Pods_HitchHkr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E6E0FF55420A10693DB353 /* Pods_HitchHkr.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		60C63DE11FB7ED48005E81FA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		60C63DE31FB8207F005E81FA /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		60C63DE51FB8225A005E81FA /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		60C63DE71FB8241F005E81FA /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		AF34C25F25CD748A180A5963 /* Pods-HitchHkr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HitchHkr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HitchHkr/Pods-HitchHkr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 				60C63DE11FB7ED48005E81FA /* GradientView.swift */,
 				60C63DE31FB8207F005E81FA /* RoundImageView.swift */,
 				60C63DE51FB8225A005E81FA /* RoundedShadowView.swift */,
+				60C63DE71FB8241F005E81FA /* CircleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60C63DE81FB8241F005E81FA /* CircleView.swift in Sources */,
 				605EB42E1FB7379600E38967 /* ViewController.swift in Sources */,
 				60C63DE41FB8207F005E81FA /* RoundImageView.swift in Sources */,
 				60C63DE61FB8225A005E81FA /* RoundedShadowView.swift in Sources */,
