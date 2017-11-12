@@ -21,7 +21,7 @@
         <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="HitchHkr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="HomeVC" customModule="HitchHkr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,7 +209,7 @@
         <!--Left Side PanelVC-->
         <scene sceneID="X83-h1-U1z">
             <objects>
-                <viewController id="nki-IL-XDV" customClass="LeftSidePanelVC" customModule="HitchHkr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LeftSidePanelVC" id="nki-IL-XDV" customClass="LeftSidePanelVC" customModule="HitchHkr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gcr-QS-e9y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
