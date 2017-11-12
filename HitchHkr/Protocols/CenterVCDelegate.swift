@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CenterVCDelegate {
-    func togleLeftPanel()
+    func toggleLeftPanel()
     func addLeftPanelViewController()
-    func anumateLeftPanel(shouldExpand: Bool)
+    func animateLeftPanel(shouldExpand: Bool)
 }
