@@ -12,8 +12,8 @@ import MapKit
 class HomeVC: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
-
     @IBOutlet weak var actionBtn: RoundedShadowButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
