@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,6 +16,9 @@
             <string>AvenirNext-Heavy</string>
             <string>AvenirNext-Regular</string>
         </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
     </customFonts>
     <scenes>
         <!--HomeVC-->
@@ -23,20 +26,20 @@
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="HomeVC" customModule="HitchHkr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="g9D-9f-IyY" userLabel="MapView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Kb-sY-PPA" customClass="GradientView" customModule="HitchHkr" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="1A3-v8-aV5"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="dGb-dN-DrJ">
-                                <rect key="frame" x="16" y="20" width="343" height="30"/>
+                                <rect key="frame" x="20" y="20" width="374" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbg-8n-5Hg">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -46,16 +49,16 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TnB-VS-gPQ">
-                                        <rect key="frame" x="103.5" y="0.0" width="136.5" height="30"/>
+                                        <rect key="frame" x="119.00000000000001" y="0.0" width="136.33333333333337" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HITCH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qj-SV-Q6k">
-                                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80.666666666666671" height="30"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
                                                 <color key="textColor" red="0.84705882352941175" green="0.27843137254901962" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HKR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcF-Ot-bkl">
-                                                <rect key="frame" x="80.5" y="0.0" width="56" height="30"/>
+                                                <rect key="frame" x="80.666666666666657" y="0.0" width="55.666666666666657" height="30"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
                                                 <color key="textColor" red="0.22352941176470587" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -63,7 +66,7 @@
                                         </subviews>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xIf-CE-ugD" customClass="RoundImageView" customModule="HitchHkr" customModuleProvider="target">
-                                        <rect key="frame" x="313" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="344" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="HtL-IP-fgo"/>
                                         </constraints>
@@ -74,10 +77,10 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WVK-jv-25b">
-                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <rect key="frame" x="0.0" y="656" width="414" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9te-Yr-HIC" customClass="RoundedShadowButton" customModule="HitchHkr" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="-8" width="335" height="60"/>
+                                        <rect key="frame" x="20" y="-8" width="374" height="60"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="wzS-qy-ncC"/>
@@ -98,8 +101,8 @@
                                     <constraint firstAttribute="height" constant="80" id="zF9-Gh-P5k"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaT-zy-0AH" customClass="RoundedShadowButton" customModule="HitchHkr" customModuleProvider="target">
-                                <rect key="frame" x="299" y="519" width="60" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaT-zy-0AH" customClass="RoundedShadowButton" customModule="HitchHkr" customModuleProvider="target">
+                                <rect key="frame" x="334" y="588" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="KsD-xw-sTz"/>
                                     <constraint firstAttribute="height" constant="60" id="krk-ka-n8R"/>
@@ -107,13 +110,13 @@
                                 <state key="normal" image="centerMapBtn"/>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MKL-3p-3Hc" customClass="RoundedShadowView" customModule="HitchHkr" customModuleProvider="target">
-                                <rect key="frame" x="16" y="58" width="343" height="87"/>
+                                <rect key="frame" x="20" y="58" width="374" height="87"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e9m-cZ-Dun">
-                                        <rect key="frame" x="10" y="10" width="323" height="67"/>
+                                        <rect key="frame" x="10" y="10" width="354" height="67"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Xay-NQ-jyZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="323" height="25"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="25"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntg-np-Cih" customClass="CircleView" customModule="HitchHkr" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="5" width="15" height="15"/>
@@ -124,7 +127,7 @@
                                                         </constraints>
                                                     </view>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OFr-o4-KTw">
-                                                        <rect key="frame" x="30" y="1.5" width="293" height="22"/>
+                                                        <rect key="frame" x="30" y="1.6666666666666714" width="324" height="22"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                                         </accessibility>
@@ -138,14 +141,14 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="676-6c-Pe5">
-                                                <rect key="frame" x="0.0" y="33" width="323" height="1"/>
+                                                <rect key="frame" x="0.0" y="33" width="354" height="1"/>
                                                 <color key="backgroundColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="SlG-DS-5Mi"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="AuX-3o-uY1">
-                                                <rect key="frame" x="0.0" y="42" width="323" height="25"/>
+                                                <rect key="frame" x="0.0" y="42" width="354" height="25"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G1p-cq-3Rl" customClass="CircleView" customModule="HitchHkr" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="5" width="15" height="15"/>
@@ -156,7 +159,7 @@
                                                         </constraints>
                                                     </view>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Where are you going?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="maF-6c-w4X">
-                                                        <rect key="frame" x="30" y="1.5" width="293" height="22"/>
+                                                        <rect key="frame" x="30" y="1.6666666666666714" width="324" height="22"/>
                                                         <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -186,6 +189,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g9D-9f-IyY" secondAttribute="bottom" id="7WU-4p-zUn"/>
                             <constraint firstItem="4Kb-sY-PPA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9zc-zS-SEp"/>
                             <constraint firstItem="g9D-9f-IyY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mw2-PC-Mvt"/>
+                            <constraint firstItem="WVK-jv-25b" firstAttribute="top" secondItem="EaT-zy-0AH" secondAttribute="bottom" constant="8" id="SFW-nD-AcL"/>
                             <constraint firstItem="4Kb-sY-PPA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="X5T-Xm-CjZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g9D-9f-IyY" secondAttribute="trailing" id="aFC-uB-dFp"/>
                             <constraint firstItem="dGb-dN-DrJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cZN-FG-ehJ"/>
@@ -214,14 +218,14 @@
             <objects>
                 <viewController storyboardIdentifier="LeftSidePanelVC" id="nki-IL-XDV" customClass="LeftSidePanelVC" customModule="HitchHkr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gcr-QS-e9y">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="95s-2v-gWe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0v-hR-jP1">
-                                        <rect key="frame" x="20" y="27.5" width="72.5" height="36"/>
+                                        <rect key="frame" x="20" y="27.666666666666668" width="72.333333333333329" height="35.666666666666657"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -273,6 +277,9 @@
                                 <state key="normal" title="Sign Up / Login ">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="SignUpLoginBtnWasPressed:" destination="QyD-4L-qk1" eventType="touchUpInside" id="cMF-xp-9Nl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -287,12 +294,143 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVT-Pr-cKH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="QyD-4L-qk1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="781.60000000000002" y="37.331334332833585"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="HEA-eR-59s">
+            <objects>
+                <viewController id="rMN-wz-Yee" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F4X-O1-NoO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="windingRoad" translatesAutoresizingMaskIntoConstraints="NO" id="5HE-Sc-oq7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SpB-BQ-zdi">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TLX-i2-OOe">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancelBtn" translatesAutoresizingMaskIntoConstraints="NO" id="0b8-BO-mlu">
+                                            <rect key="frame" x="20" y="30" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="uXb-wm-sSL"/>
+                                                <constraint firstAttribute="width" constant="30" id="yqS-KN-ZWZ"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wZ-Fv-NyW">
+                                            <rect key="frame" x="75" y="85" width="265.33333333333331" height="65.666666666666686"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HITCH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tv-bd-loN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="155.66666666666666" height="65.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="48"/>
+                                                    <color key="textColor" red="0.84705882349999995" green="0.2784313725" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HKR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCM-IG-hEr">
+                                                    <rect key="frame" x="155.66666666666666" y="0.0" width="109.66666666666666" height="65.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="48"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up or login to start requesting rides with HITCHHKR: the easiest way to get a lyft anyware!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHJ-jy-Jxf">
+                                            <rect key="frame" x="20" y="160.66666666666666" width="374" height="74"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                            <color key="textColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KTg-0L-zED">
+                                            <rect key="frame" x="20" y="249.66666666666669" width="374" height="41"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="aav-nX-Thw"/>
+                                            </constraints>
+                                            <segments>
+                                                <segment title="Passenger"/>
+                                                <segment title="Driver"/>
+                                            </segments>
+                                            <color key="tintColor" red="0.84705882349999995" green="0.2784313725" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                        </segmentedControl>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kxf-DH-pYk">
+                                            <rect key="frame" x="20" y="304.66666666666669" width="374" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="K1N-Yf-QUW"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hju-qG-aIe">
+                                            <rect key="frame" x="20" y="374.66666666666669" width="374" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="LPX-is-9K7"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZ5-NO-oir" customClass="RoundedShadowButton" customModule="HitchHkr" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="636" width="374" height="60"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="Yl0-s9-GTk"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="18"/>
+                                            <state key="normal" title="SIGN UP / LOGIN">
+                                                <color key="titleColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Kxf-DH-pYk" firstAttribute="top" secondItem="KTg-0L-zED" secondAttribute="bottom" constant="15" id="1nv-P2-3jt"/>
+                                        <constraint firstItem="4wZ-Fv-NyW" firstAttribute="top" secondItem="TLX-i2-OOe" secondAttribute="top" constant="85" id="286-9t-IcZ"/>
+                                        <constraint firstItem="nHJ-jy-Jxf" firstAttribute="top" secondItem="4wZ-Fv-NyW" secondAttribute="bottom" constant="10" id="5La-3f-ffK"/>
+                                        <constraint firstItem="0b8-BO-mlu" firstAttribute="leading" secondItem="TLX-i2-OOe" secondAttribute="leading" constant="20" id="6oI-N8-ENB"/>
+                                        <constraint firstAttribute="trailing" secondItem="nHJ-jy-Jxf" secondAttribute="trailing" constant="20" id="Bhf-Sr-Suc"/>
+                                        <constraint firstItem="Hju-qG-aIe" firstAttribute="top" secondItem="Kxf-DH-pYk" secondAttribute="bottom" constant="10" id="C8O-vZ-1tb"/>
+                                        <constraint firstItem="4wZ-Fv-NyW" firstAttribute="centerX" secondItem="TLX-i2-OOe" secondAttribute="centerX" id="DS3-fQ-WXr"/>
+                                        <constraint firstAttribute="trailing" secondItem="Hju-qG-aIe" secondAttribute="trailing" constant="20" id="FZd-8X-jLb"/>
+                                        <constraint firstItem="KTg-0L-zED" firstAttribute="leading" secondItem="TLX-i2-OOe" secondAttribute="leading" constant="20" id="GBK-0O-7E1"/>
+                                        <constraint firstAttribute="bottom" secondItem="HZ5-NO-oir" secondAttribute="bottom" constant="20" id="Jyt-TC-qhN"/>
+                                        <constraint firstAttribute="trailing" secondItem="HZ5-NO-oir" secondAttribute="trailing" constant="20" id="MYD-PF-ZHp"/>
+                                        <constraint firstAttribute="trailing" secondItem="Kxf-DH-pYk" secondAttribute="trailing" constant="20" id="RLv-is-adw"/>
+                                        <constraint firstItem="nHJ-jy-Jxf" firstAttribute="leading" secondItem="TLX-i2-OOe" secondAttribute="leading" constant="20" id="T1R-mD-gDv"/>
+                                        <constraint firstItem="HZ5-NO-oir" firstAttribute="leading" secondItem="TLX-i2-OOe" secondAttribute="leading" constant="20" id="Y63-vq-A2u"/>
+                                        <constraint firstItem="Hju-qG-aIe" firstAttribute="leading" secondItem="TLX-i2-OOe" secondAttribute="leading" constant="20" id="hg8-u2-CNN"/>
+                                        <constraint firstItem="Kxf-DH-pYk" firstAttribute="leading" secondItem="TLX-i2-OOe" secondAttribute="leading" constant="20" id="jMe-yg-ztp"/>
+                                        <constraint firstAttribute="trailing" secondItem="KTg-0L-zED" secondAttribute="trailing" constant="20" id="jfr-Hc-58e"/>
+                                        <constraint firstItem="KTg-0L-zED" firstAttribute="top" secondItem="nHJ-jy-Jxf" secondAttribute="bottom" constant="15" id="mSD-cn-xPQ"/>
+                                        <constraint firstItem="0b8-BO-mlu" firstAttribute="top" secondItem="TLX-i2-OOe" secondAttribute="top" constant="30" id="vfy-Eg-1Pu"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="736-kg-0b8" firstAttribute="bottom" secondItem="SpB-BQ-zdi" secondAttribute="bottom" id="GN3-jj-moT"/>
+                            <constraint firstItem="SpB-BQ-zdi" firstAttribute="leading" secondItem="736-kg-0b8" secondAttribute="leading" id="LWj-Vo-nvO"/>
+                            <constraint firstItem="736-kg-0b8" firstAttribute="trailing" secondItem="SpB-BQ-zdi" secondAttribute="trailing" id="Szx-Gb-acv"/>
+                            <constraint firstItem="SpB-BQ-zdi" firstAttribute="top" secondItem="736-kg-0b8" secondAttribute="top" id="ca7-j1-PmL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="736-kg-0b8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJL-N0-Zcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566.6666666666667" y="35.869565217391305"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="cancelBtn" width="32" height="31"/>
         <image name="centerMapBtn" width="62" height="62"/>
         <image name="menuSliderBtn" width="30" height="24"/>
+        <image name="windingRoad" width="2992" height="2000"/>
     </resources>
 </document>
