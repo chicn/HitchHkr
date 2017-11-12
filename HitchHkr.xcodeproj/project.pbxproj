@@ -22,6 +22,7 @@
 		60C63DF11FB84342005E81FA /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63DF01FB84342005E81FA /* CenterVCDelegate.swift */; };
 		60C63DF41FB8784B005E81FA /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63DF31FB8784B005E81FA /* UIViewExt.swift */; };
 		60C63DF61FB8C9BE005E81FA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63DF51FB8C9BE005E81FA /* LoginVC.swift */; };
+		60C63DF81FB8CBE8005E81FA /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63DF71FB8CBE8005E81FA /* RoundedCornerTextField.swift */; };
 		95F0C5B4244EC350CB8095B5 /* Pods_HitchHkr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E6E0FF55420A10693DB353 /* Pods_HitchHkr.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		60C63DF01FB84342005E81FA /* CenterVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterVCDelegate.swift; sourceTree = "<group>"; };
 		60C63DF31FB8784B005E81FA /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		60C63DF51FB8C9BE005E81FA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		60C63DF71FB8CBE8005E81FA /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
 		AF34C25F25CD748A180A5963 /* Pods-HitchHkr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HitchHkr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HitchHkr/Pods-HitchHkr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +124,7 @@
 				60C63DE51FB8225A005E81FA /* RoundedShadowView.swift */,
 				60C63DE71FB8241F005E81FA /* CircleView.swift */,
 				60C63DE91FB82757005E81FA /* RoundedShadowButton.swift */,
+				60C63DF71FB8CBE8005E81FA /* RoundedCornerTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				605EB42E1FB7379600E38967 /* HomeVC.swift in Sources */,
 				60C63DE41FB8207F005E81FA /* RoundImageView.swift in Sources */,
 				60C63DE61FB8225A005E81FA /* RoundedShadowView.swift in Sources */,
+				60C63DF81FB8CBE8005E81FA /* RoundedCornerTextField.swift in Sources */,
 				605EB42C1FB7379600E38967 /* AppDelegate.swift in Sources */,
 				60C63DE21FB7ED48005E81FA /* GradientView.swift in Sources */,
 			);
