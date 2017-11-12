@@ -12,6 +12,7 @@
 		605EB4311FB7379600E38967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 605EB42F1FB7379600E38967 /* Main.storyboard */; };
 		605EB4331FB7379600E38967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 605EB4321FB7379600E38967 /* Assets.xcassets */; };
 		605EB4361FB7379600E38967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 605EB4341FB7379600E38967 /* LaunchScreen.storyboard */; };
+		60C63DE21FB7ED48005E81FA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63DE11FB7ED48005E81FA /* GradientView.swift */; };
 		95F0C5B4244EC350CB8095B5 /* Pods_HitchHkr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E6E0FF55420A10693DB353 /* Pods_HitchHkr.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		605EB4321FB7379600E38967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		605EB4351FB7379600E38967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		605EB4371FB7379600E38967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60C63DE11FB7ED48005E81FA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		AF34C25F25CD748A180A5963 /* Pods-HitchHkr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HitchHkr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HitchHkr/Pods-HitchHkr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,9 @@
 		605EB42A1FB7379600E38967 /* HitchHkr */ = {
 			isa = PBXGroup;
 			children = (
+				60C63DE01FB7ED07005E81FA /* Model */,
+				60C63DDF1FB7ED00005E81FA /* View */,
+				60C63DDE1FB7ECF3005E81FA /* Controller */,
 				605EB42B1FB7379600E38967 /* AppDelegate.swift */,
 				605EB42D1FB7379600E38967 /* ViewController.swift */,
 				605EB42F1FB7379600E38967 /* Main.storyboard */,
@@ -77,6 +82,28 @@
 				605EB4371FB7379600E38967 /* Info.plist */,
 			);
 			path = HitchHkr;
+			sourceTree = "<group>";
+		};
+		60C63DDE1FB7ECF3005E81FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		60C63DDF1FB7ED00005E81FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60C63DE11FB7ED48005E81FA /* GradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60C63DE01FB7ED07005E81FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		66DDA6163027E5607C8BFCD1 /* Pods */ = {
@@ -213,6 +240,7 @@
 			files = (
 				605EB42E1FB7379600E38967 /* ViewController.swift in Sources */,
 				605EB42C1FB7379600E38967 /* AppDelegate.swift in Sources */,
+				60C63DE21FB7ED48005E81FA /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
