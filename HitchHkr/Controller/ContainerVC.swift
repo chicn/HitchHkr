@@ -45,7 +45,7 @@ class ContainerVC: UIViewController {
 
         if homeVC == nil {
             homeVC = UIStoryboard.homeVC()
-            addChildSidePanelViewController(leftVC)
+            homeVC.delegate = self
         }
 
         presentingController = homeVC
