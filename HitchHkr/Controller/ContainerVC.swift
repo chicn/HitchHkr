@@ -24,12 +24,15 @@ var showVC: ShowWhichVC = .homeVC
 class ContainerVC: UIViewController {
 
     var homeVC: HomeVC!
+    var leftVC: LeftSidePanelVC!
+    var centerController: UIViewController!
     var currentState: SlideOutState = .collapsed
 
+    var isHidden = false
+    let centerPanelExpandedOffset: CGFloat = 160
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        initCenter(screen: showVC)
     }
 
     func initCenter(screen: ShowWhichVC) {
@@ -39,8 +42,21 @@ class ContainerVC: UIViewController {
 
         if homeVC == nil {
             homeVC = UIStoryboard.homeVC()
-            homeVC.delegate = self
+            addChildSidePanelViewController(leftVC)
         }
+
+        presentingController = homeVC
+
+        if let con = centerController {
+            con.view.removeFromSuperview()
+            con.removeFromParentViewController()
+        }
+
+        centerController = presentingController
+
+        view.addSubview(centerController.view)
+        addChildViewController(centerController)
+        centerController.didMove(toParentViewController: self)
     }
 }
 
@@ -55,7 +71,16 @@ extension ContainerVC: CenterVCDelegate {
     }
 
     func addLeftPanelViewController() {
-        //<#code#>
+        if leftVC == nil {
+            leftVC = UIStoryboard.leftViewController()
+            addChildSidePanelViewController(leftVC!)
+        }
+    }
+
+    func addChildSidePanelViewController(_ sidePanelController: LeftSidePanelVC) {
+        view.insertSubview(sidePanelController.view, at: 0)
+        addChildViewController(sidePanelController)
+        sidePanelController.didMove(toParentViewController: self)
     }
 
     func animateLeftPanel(shouldExpand: Bool) {
