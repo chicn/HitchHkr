@@ -70,18 +70,32 @@
                                     <constraint firstAttribute="height" constant="30" id="a0l-NS-qu6"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9te-Yr-HIC">
-                                <rect key="frame" x="16" y="587" width="343" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WVK-jv-25b">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9te-Yr-HIC" customClass="RoundedShadowButton" customModule="HitchHkr" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="-8" width="335" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="wzS-qy-ncC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="28"/>
+                                        <state key="normal" title="REQUEST RIDE">
+                                            <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jer-ZH-83i"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="uOu-pm-evt"/>
+                                    <constraint firstAttribute="trailing" secondItem="9te-Yr-HIC" secondAttribute="trailing" constant="20" id="DeW-59-pZo"/>
+                                    <constraint firstItem="9te-Yr-HIC" firstAttribute="top" secondItem="WVK-jv-25b" secondAttribute="top" constant="-8" id="lZw-zW-uEv"/>
+                                    <constraint firstItem="9te-Yr-HIC" firstAttribute="leading" secondItem="WVK-jv-25b" secondAttribute="leading" constant="20" id="sLB-DY-c6h"/>
+                                    <constraint firstAttribute="height" constant="80" id="zF9-Gh-P5k"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="28"/>
-                                <state key="normal" title="REQUEST RIDE">
-                                    <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaT-zy-0AH">
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaT-zy-0AH" customClass="RoundedShadowButton" customModule="HitchHkr" customModuleProvider="target">
                                 <rect key="frame" x="299" y="519" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="KsD-xw-sTz"/>
@@ -163,12 +177,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="WVK-jv-25b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1et-KS-TdQ"/>
                             <constraint firstItem="EaT-zy-0AH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2F5-cd-Xrg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dGb-dN-DrJ" secondAttribute="trailing" id="6UK-Ba-nPW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g9D-9f-IyY" secondAttribute="bottom" id="7WU-4p-zUn"/>
                             <constraint firstItem="4Kb-sY-PPA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9zc-zS-SEp"/>
-                            <constraint firstItem="9te-Yr-HIC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="G57-7W-uVl"/>
-                            <constraint firstItem="9te-Yr-HIC" firstAttribute="top" secondItem="EaT-zy-0AH" secondAttribute="bottom" constant="8" id="IuD-yw-AHq"/>
                             <constraint firstItem="g9D-9f-IyY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mw2-PC-Mvt"/>
                             <constraint firstItem="4Kb-sY-PPA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="X5T-Xm-CjZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g9D-9f-IyY" secondAttribute="trailing" id="aFC-uB-dFp"/>
@@ -177,14 +190,15 @@
                             <constraint firstItem="4Kb-sY-PPA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fMN-SD-6PD"/>
                             <constraint firstItem="MKL-3p-3Hc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="i4O-QD-K8X"/>
                             <constraint firstItem="MKL-3p-3Hc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ic6-b4-em8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9te-Yr-HIC" secondAttribute="bottom" constant="20" id="jJx-uw-zVb"/>
+                            <constraint firstItem="WVK-jv-25b" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qUK-Db-1f9"/>
+                            <constraint firstItem="WVK-jv-25b" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rkq-C0-KSg"/>
                             <constraint firstItem="MKL-3p-3Hc" firstAttribute="top" secondItem="dGb-dN-DrJ" secondAttribute="bottom" constant="8" id="wOD-YE-4ve"/>
-                            <constraint firstItem="9te-Yr-HIC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="y9N-5W-9kY"/>
                             <constraint firstItem="g9D-9f-IyY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yet-ma-0RV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="actionBtn" destination="9te-Yr-HIC" id="L9t-aG-7zR"/>
                         <outlet property="mapView" destination="g9D-9f-IyY" id="kh0-5v-QR6"/>
                     </connections>
                 </viewController>
