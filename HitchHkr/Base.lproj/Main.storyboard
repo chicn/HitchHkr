@@ -89,7 +89,7 @@
                                 </constraints>
                                 <state key="normal" image="centerMapBtn"/>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MKL-3p-3Hc">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MKL-3p-3Hc" customClass="RoundedShadowView" customModule="HitchHkr" customModuleProvider="target">
                                 <rect key="frame" x="16" y="58" width="343" height="87"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e9m-cZ-Dun">
