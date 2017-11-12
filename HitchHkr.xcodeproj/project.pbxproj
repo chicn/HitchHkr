@@ -85,7 +85,6 @@
 				60C63DDF1FB7ED00005E81FA /* View */,
 				60C63DDE1FB7ECF3005E81FA /* Controller */,
 				605EB42B1FB7379600E38967 /* AppDelegate.swift */,
-				605EB42D1FB7379600E38967 /* HomeVC.swift */,
 				605EB42F1FB7379600E38967 /* Main.storyboard */,
 				605EB4321FB7379600E38967 /* Assets.xcassets */,
 				605EB4341FB7379600E38967 /* LaunchScreen.storyboard */,
@@ -97,6 +96,7 @@
 		60C63DDE1FB7ECF3005E81FA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				605EB42D1FB7379600E38967 /* HomeVC.swift */,
 				60C63DEB1FB83C35005E81FA /* LeftSidePanelVC.swift */,
 			);
 			path = Controller;
