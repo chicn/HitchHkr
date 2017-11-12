@@ -29,8 +29,4 @@ class HomeVC: UIViewController, MKMapViewDelegate {
         delegate?.toggleLeftPanel()
     }
 
-    @IBAction func SignUpLoginBtnWasPressed(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let loginVC = storyboard.instantiateInitialViewController(widhIdentifier)
-    }
 }
