@@ -23,6 +23,7 @@
 		60C63DF41FB8784B005E81FA /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63DF31FB8784B005E81FA /* UIViewExt.swift */; };
 		60C63DF61FB8C9BE005E81FA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63DF51FB8C9BE005E81FA /* LoginVC.swift */; };
 		60C63DF81FB8CBE8005E81FA /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63DF71FB8CBE8005E81FA /* RoundedCornerTextField.swift */; };
+		60C63DFA1FB94A2D005E81FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60C63DF91FB94A2C005E81FA /* GoogleService-Info.plist */; };
 		95F0C5B4244EC350CB8095B5 /* Pods_HitchHkr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E6E0FF55420A10693DB353 /* Pods_HitchHkr.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		60C63DF31FB8784B005E81FA /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		60C63DF51FB8C9BE005E81FA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		60C63DF71FB8CBE8005E81FA /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
+		60C63DF91FB94A2C005E81FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF34C25F25CD748A180A5963 /* Pods-HitchHkr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HitchHkr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HitchHkr/Pods-HitchHkr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 				605EB4321FB7379600E38967 /* Assets.xcassets */,
 				605EB4341FB7379600E38967 /* LaunchScreen.storyboard */,
 				605EB4371FB7379600E38967 /* Info.plist */,
+				60C63DF91FB94A2C005E81FA /* GoogleService-Info.plist */,
 			);
 			path = HitchHkr;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				605EB4361FB7379600E38967 /* LaunchScreen.storyboard in Resources */,
+				60C63DFA1FB94A2D005E81FA /* GoogleService-Info.plist in Resources */,
 				605EB4331FB7379600E38967 /* Assets.xcassets in Resources */,
 				605EB4311FB7379600E38967 /* Main.storyboard in Resources */,
 			);
