@@ -24,6 +24,7 @@
 		60C63DF61FB8C9BE005E81FA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63DF51FB8C9BE005E81FA /* LoginVC.swift */; };
 		60C63DF81FB8CBE8005E81FA /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63DF71FB8CBE8005E81FA /* RoundedCornerTextField.swift */; };
 		60C63DFA1FB94A2D005E81FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60C63DF91FB94A2C005E81FA /* GoogleService-Info.plist */; };
+		60C63DFD1FB94C8A005E81FA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63DFC1FB94C8A005E81FA /* DataService.swift */; };
 		95F0C5B4244EC350CB8095B5 /* Pods_HitchHkr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E6E0FF55420A10693DB353 /* Pods_HitchHkr.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		60C63DF51FB8C9BE005E81FA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		60C63DF71FB8CBE8005E81FA /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
 		60C63DF91FB94A2C005E81FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60C63DFC1FB94C8A005E81FA /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		AF34C25F25CD748A180A5963 /* Pods-HitchHkr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HitchHkr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HitchHkr/Pods-HitchHkr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 		605EB42A1FB7379600E38967 /* HitchHkr */ = {
 			isa = PBXGroup;
 			children = (
+				60C63DFB1FB94C77005E81FA /* Services */,
 				60C63DF21FB87825005E81FA /* Extensions */,
 				60C63DEF1FB842D8005E81FA /* Protocols */,
 				60C63DE01FB7ED07005E81FA /* Model */,
@@ -153,6 +156,14 @@
 				60C63DF31FB8784B005E81FA /* UIViewExt.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		60C63DFB1FB94C77005E81FA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				60C63DFC1FB94C8A005E81FA /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		66DDA6163027E5607C8BFCD1 /* Pods */ = {
@@ -289,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60C63DF11FB84342005E81FA /* CenterVCDelegate.swift in Sources */,
+				60C63DFD1FB94C8A005E81FA /* DataService.swift in Sources */,
 				60C63DEA1FB82757005E81FA /* RoundedShadowButton.swift in Sources */,
 				60C63DF61FB8C9BE005E81FA /* LoginVC.swift in Sources */,
 				60C63DEC1FB83C35005E81FA /* LeftSidePanelVC.swift in Sources */,
