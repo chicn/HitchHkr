@@ -377,6 +377,9 @@
                                             <state key="normal" title="SIGN UP / LOGIN">
                                                 <color key="titleColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="authBtnWasPressed:" destination="rMN-wz-Yee" eventType="touchUpInside" id="bFw-t4-rEm"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpj-tE-gdB">
                                             <rect key="frame" x="20" y="30" width="20" height="20"/>
@@ -424,6 +427,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="736-kg-0b8"/>
                     </view>
+                    <connections>
+                        <outlet property="authBtn" destination="HZ5-NO-oir" id="vk1-Ke-eDc"/>
+                        <outlet property="emailField" destination="Kxf-DH-pYk" id="rQ8-Is-ZcH"/>
+                        <outlet property="passwordField" destination="Hju-qG-aIe" id="2Hd-vy-lnv"/>
+                        <outlet property="segmentedControl" destination="KTg-0L-zED" id="Cq9-m0-d1V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJL-N0-Zcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
