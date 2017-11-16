@@ -54,18 +54,33 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                         print("Email user authenticated successfully with Firebase")
                         self.dismiss(animated: true, completion: nil)
                     } else {
+                        if let errorCode = AuthErrorCode(rawValue: error!._code) {
+                            switch errorCode {
+                            case .emailAlreadyInUse :
+                                print("That email is already in use. Please try again.")
+                            case .wrongPassword :
+                                print("Whoops! That was the wrong password!")
+                            default :
+                                print("An unexpected error occurred. Please try again")
+                            }
+                        }
+
+
                         Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
                             if error != nil {
                                 if let errorCode = AuthErrorCode(rawValue: error!._code) {
                                     switch errorCode {
-                                    case .invalidEmail :
-                                        print("Email invalid. Please try again.")
-                                    case .emailAlreadyInUse :
+                                    case .emailAlreadyInUse:
                                         print("That email is already in use. Please try again.")
-                                    case .wrongPassword :
-                                        print("Whoops! That was the wrong password!")
-                                    default :
-                                        print("An unexpected error occurred. Please try again")
+                                    case .invalidEmail:
+                                        print("That is an invalid email. Please try again.")
+                                    default:
+                                        print("An unexpected error occurred. Please try again.")
+
+                                    }
+
+                                    if errorCode == AuthErrorCode.invalidEmail {
+                                        print ("That is an invalid email! Please try again.")
                                     }
                                 }
                             } else {
